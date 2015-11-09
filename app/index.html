@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>rich edit sample</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+
+<body>
+<div class="container">
+
+    <section>
+        <h1>デモ</h1>
+    </section>
+
+    <div class="row">
+
+        <div class="col-xs-6 col-lg-4">
+            <h2>wysiwyg</h2>
+
+            <div class="btn-toolbar" role="toolbar">
+                <div id="toolbar" class="btn-group" role="group">
+                </div>
+            </div>
+
+            <div id="wysiwyg" contenteditable="true"></div>
+        </div>
+
+        <div class="col-xs-6 col-lg-4">
+            <h2>html</h2>
+
+            <div id="html"></div>
+        </div>
+    </div>
+
+
+    <section>
+        <h1>説明</h1>
+
+        <ul>
+            <li>
+                ブラウザデフォルトの挙動
+                <ul>
+                    <li>li の位置で改行すると、ブラウザの機能で自動で li を補ってくれる(chrome, firefox)
+                    <li>shift + 改行で段落を変えない改行が挿入される(chrome, firefox)
+                    <li>ブラウザによっては table で行を追加したりできる(firefox)
+                </ul>
+            </li>
+            <li>
+                作ってみたもの補足
+                <ul>
+                    <li>@ を入力すると入力補完するようなもの
+                    <li>テーブルの中でタブを押すと行を追加する
+                </ul>
+            </li>
+            <li>
+                その他
+                <ul>
+                    <li>confluence は tinyMCE 使っているっぽい
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/g/ace@1.2.1(min/ace.js+min/ext-beautify.js+min/ext-chromevox.js+min/mode-html.js+min/theme-monokai.js)"></script>
+
+<script src="scripts/test.js"></script>
+</body>
+</html>
